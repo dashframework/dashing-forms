@@ -1,0 +1,22 @@
+{
+  "name": "dashing-forms",
+  "version": "1.0.0",
+  "main": "sass/dashing-forms.scss",
+
+  "homepage": "http://developers.samaritanministries.org/",
+  "description": "Basic styling for basic form element",
+
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dashframework/dashing-forms.git"
+  },
+
+  "dependencies": {
+    "dashing-core": "~1.0.5"
+  },
+
+  "devDependencies": {
+    "dashing-grid": "~1.0.5"
+  }
+}
