@@ -99,9 +99,21 @@
       <input type="checkbox" id="fancy-checkbox"/>
     </fieldset>
 
-    <fieldset class="column full checkbox-custom">
-      <input type="checkbox" id="fancy-custom-checkbox"/>
-      <label for="fancy-custom-checkbox" class="inline">Fancy custom checkbox</label>
+    <fieldset>
+      <div class="column full checkbox-custom">
+        <input type="checkbox" id="fancy-custom-checkbox"/>
+        <label for="fancy-custom-checkbox" class="inline">Fancy custom checkbox</label>
+      </div>
+
+      <div class="column full checkbox-custom">
+        <input type="checkbox" id="fancy-custom-checkbox--disabled" disabled/>
+        <label for="fancy-custom-checkbox--disabled" class="inline">Disabled custom checkbox</label>
+      </div>
+
+      <div class="column full checkbox-custom">
+        <input type="checkbox" id="fancy-custom-checkbox--disabled-checked" checked disabled/>
+        <label for="fancy-custom-checkbox--disabled-checked" class="inline">Disabled custom checkbox</label>
+      </div>
     </fieldset>
 
     <fieldset class="column full">

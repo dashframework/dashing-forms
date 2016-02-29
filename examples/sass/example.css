@@ -368,7 +368,7 @@ td,
 th {
   padding: 0; }
 
-/*! dashing-core v1.0.0 | MIT License */
+/*! dashing-core v1.0.6 | MIT License */
 /* Core Variables
   =========================================================================== */
 /* Core Extendables
@@ -378,8 +378,13 @@ th {
   padding: 0;
   list-style: none; }
 
-.row, .column, .clearfix {
-  overflow: auto; }
+.row, .clearfix {
+  *zoom: 1; }
+  .row:before, .row:after, .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+  .row:after, .clearfix:after {
+    clear: both; }
 
 /* Core Mixins
   =========================================================================== */
@@ -512,6 +517,7 @@ p {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  border: none;
   cursor: pointer;
   font-size: 0.9rem;
   font-weight: 600;
@@ -663,7 +669,7 @@ fieldset {
   margin: 0; }
   fieldset label {
     display: block;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     margin-bottom: 0.3rem;
     text-align: left; }
@@ -853,6 +859,20 @@ fieldset {
   border: 2px solid #6A8DD3;
   background-position: 0px 0px;
   background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve"> <path fill="%23FFFFFF " d="M6.969,13.5c-0.269,0-0.532-0.09-0.745-0.259l-3.266-2.578c-0.522-0.412-0.611-1.168-0.199-1.69 c0.413-0.522,1.17-0.609,1.69-0.199l2.208,1.743l4.618-7.448c0.35-0.564,1.091-0.74,1.656-0.388c0.565,0.35,0.739,1.092,0.389,1.657 l-5.328,8.593c-0.181,0.291-0.477,0.491-0.814,0.551C7.108,13.494,7.038,13.5,6.969,13.5z"/></svg>');
+  background-size: 100%; }
+.checkbox-custom input[disabled] ~ label,
+.checkbox-custom input[disabled]:active ~ label,
+.checkbox-custom input[disabled]:checked ~ label {
+  cursor: default;
+  pointer-events: none; }
+  .checkbox-custom input[disabled] ~ label:before,
+  .checkbox-custom input[disabled]:active ~ label:before,
+  .checkbox-custom input[disabled]:checked ~ label:before {
+    border-color: #EDEDED;
+    background-color: #EDEDED; }
+.checkbox-custom input[disabled]:active ~ label:before,
+.checkbox-custom input[disabled]:checked ~ label:before {
+  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve"> <path fill="%23A1A1A1" d="M6.969,13.5c-0.269,0-0.532-0.09-0.745-0.259l-3.266-2.578c-0.522-0.412-0.611-1.168-0.199-1.69 c0.413-0.522,1.17-0.609,1.69-0.199l2.208,1.743l4.618-7.448c0.35-0.564,1.091-0.74,1.656-0.388c0.565,0.35,0.739,1.092,0.389,1.657 l-5.328,8.593c-0.181,0.291-0.477,0.491-0.814,0.551C7.108,13.494,7.038,13.5,6.969,13.5z"/></svg>');
   background-size: 100%; }
 
 /*# sourceMappingURL=example.css.map */
